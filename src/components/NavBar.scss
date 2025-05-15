@@ -1,0 +1,19 @@
+.navLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li{
+        list-style: none;
+    }
+    .navLink {
+        margin: 1em;
+        text-decoration: none;
+        color: rgb(42, 81, 74);
+        &:hover {
+            color: rgba(42, 81, 74, 0.7);
+        }
+        &:active {
+            color: black;
+        }
+    }
+}
