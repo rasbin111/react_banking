@@ -20,12 +20,12 @@ const Login = () => {
             "password": password
         };
 
-        axiosInstance.post("/login", postBody)
+        axiosInstance.post("users/login", postBody)
             .then((response: AxiosResponse) => {
                 if (response.status === 200) {
                     console.log(response)
                     localStorage.setItem("token", response.data.token)
-                    nav("/")
+                    nav("/login/mfa_auth")
                 }
 
             })
